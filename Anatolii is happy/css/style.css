@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body {
+	font-family: 'Raleway', sans-serif; 
+	text-align: center;
+}
+hr {
+	width: 50%;
+	border: 0;
+	height: 1px;
+	background: #000;
+	background-image: -webkit-linear-gradient(left, #fff, #000, #fff);
+	background-image: -moz-linear-gradient(left, #fff, #000, #fff);
+	background-image: -ms-linear-gradient(left, #fff, #000, #fff);
+	background-image: -o-linear-gradient(left, #fff, #000, #fff);
+}
+img { 
+	border-radius: 10px 75px; 
+}	
