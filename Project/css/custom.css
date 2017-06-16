@@ -1,0 +1,152 @@
+ body {
+      background: url("../images/bg.jpg");
+      width: 100%;
+      height: 100%;
+      background-attachment: fixed;
+    }
+ body > .container{
+ 	padding: 30px 15px 0;
+}
+.footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: #222;
+  border-color: #080808;
+}
+.navbar-header {
+  width: 31%;
+}
+.container {
+	margin-top: 50px;
+}
+.logo{
+	padding-top: 0px;
+	padding-left: 30px;
+	height: 50px;
+}
+h1, h2, h3, p {
+	color: white;
+}
+h3 {
+  padding-bottom: 45px;
+}
+footer a {
+  color: white;
+}
+.iron{
+  padding-left: 0;
+}
+#hello{
+   position: relative;
+    -webkit-animation-name: hello; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3.75s; /* Safari 4.0 - 8.0 */
+    animation-name: hello;
+    animation-duration: 3.75s;
+}
+
+  @-webkit-keyframes hello {     /* Safari 4.0 - 8.0 */
+      0%  {opacity:0;}
+      75%  {opacity:0;}
+      100% {opacity: 1;}
+  }
+
+  @keyframes hello {   /* Standard syntax */
+      0%  {opacity: 0;}
+      75%  {opacity:0;}
+      100% {opacity: 1;}
+  }
+
+#iron{
+    position: relative;
+    -webkit-animation-name: iron; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: iron;
+    animation-duration: 3s;
+}
+
+
+  @-webkit-keyframes iron {     /* Safari 4.0 - 8.0 */
+      0%  {left:-200px; top:500px;}
+      100% {left:0px; top:0px;}
+  }
+
+  @keyframes iron {   /* Standard syntax */
+      0%  {left:-200px; top:500px;}
+      100% {left:0px; top:0px;}
+  }
+
+
+#anim {
+  display: inline-block;
+  position: relative; 
+  margin: 20px 16px 0px 20px; 
+  width: 150px; 
+  height: 60px; 
+  transition:.2s; 
+}
+#anim:after {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 0 6px;
+}
+i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: red;
+  animation: move 2s infinite;
+}
+@keyframes move {
+  from {
+    left: 0;
+    bottom: 75px; 
+  }
+  to { 
+    left: 145px; 
+    bottom: 75px;
+  }  
+}
+.ease-in-out i { 
+  animation-timing-function: ease-in-out; 
+}
+.cubic-bezier-1 i { 
+  animation-timing-function: cubic-bezier(.8,1.5,.2,-1); 
+}
+.cubic-bezier-1:after {content:"cubic-bezier (.8,1.5,.2,-1)"}
+.cubic-bezier-2:after {content:"cubic-bezier (.47,-.44,.49,1.46)"}
+.cubic-bezier-3:after {content:"cubic-bezier (1,0,0,.5)"}
+.cubic-bezier-4:after{ 
+  content: "cubic-bezier (.1,.7,1,1)"; 
+}
+.cubic-bezier-2 i { 
+  animation-timing-function: cubic-bezier(.47,-.44,.49,1.46); 
+}
+.cubic-bezier-3 i { 
+  animation-timing-function: cubic-bezier(1,0,0,.5); 
+}
+.cubic-bezier-4 i { 
+  animation-timing-function: cubic-bezier( .1, .7, 1, .1); 
+}
+.steps i { 
+  animation-timing-function: steps(10,end);
+}
+.steps:after { 
+  content: "steps(10,end)"; 
+}
+i:nth-child(2) {animation-delay:.1s;}
+i:nth-child(3) {animation-delay:.2s;}
+i:nth-child(4) {animation-delay:.3s;}
+i:nth-child(5) {animation-delay:.4s;}
+i:nth-child(6) {animation-delay:.5s;}
+i:nth-child(7) {animation-delay:.6s;}
+i:nth-child(8) {animation-delay:.7s;}
+i:nth-child(9) {animation-delay:.8s;}
+i:nth-child(10){animation-delay:.9s;}
